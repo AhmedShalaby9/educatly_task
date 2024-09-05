@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "489339870133",
+    "project_id": "eductalt-task",
+    "storage_bucket": "eductalt-task.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489339870133:android:a310c541ef79cd599897fc",
+        "android_client_info": {
+          "package_name": "com.example.api"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ320LvVqxeXRwLeW93762qzB2tbaUfjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
