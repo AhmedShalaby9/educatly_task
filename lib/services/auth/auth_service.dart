@@ -44,4 +44,22 @@ class AuthService extends ChangeNotifier {
       throw Exception(e.code);
     }
   }
+  Future<void> setUserOnlineStatus(bool isOnline) async {
+    var user = _firebaseAuth.currentUser;
+    if (user != null) {
+      await _firestore.collection('users').doc(user.uid).update({
+        'isOnline': isOnline,
+        'lastActive': Timestamp.now(),
+      });
+    }
+  }
+
+  Future<void> updateLastActive() async {
+    var user = _firebaseAuth.currentUser;
+    if (user != null) {
+      await _firestore.collection('users').doc(user.uid).update({
+        'lastActive': Timestamp.now(),
+      });
+    }
+  }
 }
